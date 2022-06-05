@@ -1,0 +1,386 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Kaffen - Cafe & Restaurant HTML Template</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="true">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="{% static 'template/styles/bootstrap.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'template/fonts/font-awesome/css/font-awesome.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'template/fonts/font-awesome/css/line-awesome.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'template/styles/animate.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'template/styles/magnific-popup.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'template/styles/splitting.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'template/styles/swiper.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'template/style.css' %}" type="text/css" media="all" />
+
+	
+	<!-- END CSS STYLES -->
+
+</head>
+
+<body>
+	<div class="bg">
+
+		<!-- Preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner-logo">
+						<img src="{% static 'template/images/logo.png' %}" alt="" />
+						<div class="spinner-dot">
+							<div class="spinner-line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+				<!-- Header -->
+				<header class="kf-header">
+		
+					<!-- topline -->
+					<div class="kf-topline">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				
+								<!-- hours -->
+								<div class="kf-h-group">
+									<i class="far fa-clock"></i>
+									
+								</div>
+				
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 align-center">
+				
+								<!-- social -->
+								<div class="kf-h-social">
+									<a href="facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+									<a href="twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+									<a href="instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+									<a href="youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+								</div>
+				
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 align-right">
+				
+								<!-- location -->
+								<div class="kf-h-group">
+									<i class="fas fa-map-marker-alt"></i>
+									<em>Location :</em> 5 main street
+								</div>
+				
+							</div>
+						</div>
+					</div>
+				
+					<!-- navbar -->
+					<div class="kf-navbar">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				
+								<!-- logo -->
+								<div class="kf-logo">
+									<a href="/"><img src="{% static 'template/images/logo.png' %}" alt="" /></a>
+								</div>
+				
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 align-center">
+				
+								<!-- main menu -->
+								<div class="kf-main-menu">
+									<ul>
+										<li>
+											<a href="/">Home</a>
+										</li>
+										<li><a href="/about">About</a></li>
+										<li>
+											<a href="/#store">Store</i></a>
+										</li>
+										<li>
+											<a class="nav-link waves-effect p-1" href="/order-summary">
+												<i class="fas fa-shopping-cart" style="font-size: 20px"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+				
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 align-right d-flex">
+								<a class="nav-link waves-effect p-1 mt-2 d-md-none" href="/order-summary">
+									<i class="fas fa-shopping-cart" style="font-size: 20px; color:white"></i>
+								</a>
+								<!-- menu btn -->
+								<a href="#" class="kf-menu-btn"><span></span></a>
+								
+							</div>
+						</div>
+					</div>
+				
+					<!-- mobile navbar -->
+					<div class="kf-navbar-mobile">
+				
+						<!-- mobile menu -->
+						<div class="kf-main-menu">
+							<ul>
+								<li class="has-children">
+									<a href="/">Home</a>
+								</li>
+								<li><a href="/about">About</a></li>
+								<li>
+									<a href="/#store">Store</a>
+								</li>
+							</ul>
+						</div>
+				
+						<!-- mobile topline -->
+						<div class="kf-topline">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				
+				
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				
+									<!-- social -->
+									<div class="kf-h-social">
+										<a href="facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+										<a href="twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+										<a href="instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+										<a href="youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+									</div>
+				
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				
+									<!-- hours -->
+									<div class="kf-h-group">
+										<i class="far fa-clock"></i>
+									</div>
+				
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				
+									<!-- location -->
+									<div class="kf-h-group">
+										<i class="fas fa-map-marker-alt"></i>
+										<em>Location :</em> 5 main street
+									</div>
+				
+								</div>
+							</div>
+						</div>
+				
+					</div>
+				
+				</header>
+
+    <div class="wrapper">
+      <div class="container wow fadeIn">
+
+        <!-- Heading -->
+        <h2 class="my-5 h2 text-center">Checkout form</h2>
+  
+        <!--Grid row-->
+        <div class="row">
+  
+          <!--Grid column-->
+          <div class="col-md-8 mb-4">
+  
+			<form method="POST" id="checkout-form">
+            <!--Card-->
+            <div class="card" style="background-color: black; border: 2px solid #b99272">
+
+				<div class="card-body">
+  
+              <!--Card content-->
+              
+              {% csrf_token %}
+                <!--address-->
+                <div class="md-form mb-5">
+				<label for="address" class="">Address</label>
+                  {{ form.street_address }}
+                </div>
+  
+                <!--address-2-->
+                <div class="md-form mb-5">
+				<label for="address-2" class="">Address 2 (optional)</label>
+                  {{ form.apartment_address }}
+                </div>
+  
+                <!--Grid row-->
+                <div class="row">
+  
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-12 mb-4">
+                    <label for="country">Country</label>
+                    {{ form.country }}
+                  </div>
+                  <!--Grid column-->
+  
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-6 mb-4">
+  
+                    <label for="zip">Zip</label>
+                    {{ form.zip }}
+                    <div class="invalid-feedback">
+                      Zip code required.
+                    </div>
+  
+                  </div>
+                  <!--Grid column-->
+  
+                </div>
+                <!--Grid row-->
+  
+                <hr>
+  
+                <div class="custom-control custom-checkbox d-flex">
+                  <input {% if form.same_billing_address.value %}checked{% endif %} type="checkbox" class="custom-control-input" name="same_billing_address" id="same-address" style="align-self: center">
+                  <label class="custom-control-label" for="same-address"  style="margin-left: 10px; margin-top: 20px">Shipping address is the same as my billing address</label>
+                </div>
+                <div class="custom-control custom-checkbox d-flex">
+                  <input {% if form.save_info.value %}checked{% endif %} type="checkbox" class="custom-control-input" name="save_info" id="save-info" style="align-self: center">
+                  <label class="custom-control-label" for="save-info" style="margin-left: 10px; margin-top: 20px">Save this information for next time</label>
+                </div>
+  
+                <hr>
+  
+                <!--<div class="d-block my-3">
+                  {% for value, name in form.fields.payment_option.choices %}
+                  <div class="custom-control custom-radio">
+                    <input id="{{ name }}" name="payment_option" value="{{ value }}" type="radio" class="custom-control-input" required>
+                    <label class="custom-control-label" for="{{ name }}">{{ name }}</label>
+                  </div>
+                  {% endfor %}
+                </div>-->
+               
+              
+  </div>
+            </div>
+			<hr class="mb-4">
+			<div id="paypal-button-container"></div>
+			<script src="https://www.paypal.com/sdk/js?client-id=AfGyIymNf3OCTDlSvhTO8F5yz_l9mNH8bZj0efWUceUDIri5KHHK688a-Jw9KzCPhxxv9vtOJUHLiIEF&currency=USD"></script>
+
+			<script>
+
+				var total = '{{ order.get_total_price }}';
+				// Render the PayPal button into #paypal-button-container
+				paypal.Buttons({
+		
+					// Set up the transaction
+					createOrder: function(data, actions) {
+						return actions.order.create({
+							purchase_units: [{
+								amount: {
+									value: total
+								}
+							}]
+						});
+					},
+		
+					// Finalize the transaction
+					onApprove: function(data, actions) {
+						return actions.order.capture().then(function(orderData) {
+							// Successful capture! For demo purposes:
+							console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+							var success = document.getElementById('success');
+							success.style.display = 'block';
+
+							var form = document.getElementById('checkout-form');
+							form.submit();
+		
+							// Replace the above to show a success message within this page, e.g.
+							// const element = document.getElementById('paypal-button-container');
+							// element.innerHTML = '';
+							// element.innerHTML = '<h3>Thank you for your payment!</h3>';
+							// Or go to another URL:  actions.redirect('thank_you.html');
+						});
+					}
+		
+		
+				}).render('#paypal-button-container');
+			</script>
+
+
+		</form>
+
+            <!--/.Card-->
+  
+          </div>
+          <!--Grid column-->
+  
+            <!--Grid column-->
+          <div class="col-md-4 mb-4">
+  
+            <!-- Heading -->
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Your cart</span>
+              <span class="badge badge-secondary badge-pill">{{ order.items.count }}</span>
+            </h4>
+  
+            <!-- Cart -->
+            <ul class="list-group mb-3 z-depth-1">
+              
+              {% for order_item in order.items.all %}
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0" style="color: black">{{ order_item }}</h6>
+                  <small class="text-muted">{{ order_item.item.description }}</small>
+                </div>
+                <span class="text-muted">{{ order_item.get_final_price }}</span>
+              </li>
+              {% endfor %}
+             
+  
+              {% comment %} <li class="list-group-item d-flex justify-content-between bg-light">
+                <div class="text-success">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>EXAMPLECODE</small>
+                </div>
+                <span class="text-success">-$0</span>
+              </li> {% endcomment %}
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (USD)</span>
+                <strong>{{ order.get_total_price }}</strong>
+              </li>
+            </ul>
+            <!-- Cart -->
+			<div class="card" id="success" style="background-color: forestgreen; padding: 20px; color:greenyellow; display: none;" role="alert">
+				Order created successfully!
+			  </div>
+			  
+          </div>
+  
+        </div>
+        <!--Grid row-->
+  
+      </div>
+    </div>
+
+        </div>
+
+        <script src="{% static 'template/js/jquery.min.js' %}"></script>
+        <script src="{% static 'template/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'template/js/bootstrap.js' %}"></script>
+        <script src="{% static 'template/js/swiper.js' %}"></script>
+        <script src="{% static 'template/js/splitting.js' %}"></script>
+        <script src="{% static 'template/js/jquery.paroller.min.js' %}"></script>
+        <script src="{% static 'template/js/parallax.js' %}"></script>
+        <script src="{% static 'template/js/magnific-popup.js' %}"></script>
+        <script src="{% static 'template/js/imagesloaded.pkgd.js' %}"></script>
+        <script src="{% static 'template/js/isotope.pkgd.js' %}"></script>
+        <script src="{% static 'template/js/jquery.scrolla.js' %}"></script>
+        <script src="{% static 'template/js/skrollr.js' %}"></script>
+        <script src="{% static 'template/js/common.js' %}"></script>
+
+        </body>
+        </html>
